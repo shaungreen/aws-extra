@@ -1,8 +1,8 @@
 const sdk = require('./index').sdk
 
 const main = async () => {
-  const result = await sdk.s3.listBuckets()
-  console.log(result)
+  const myFunctions = await sdk.lambda.listFunctions.all()
+  console.log('total number of functions:', myFunctions.Functions.length)
 }
 
 main()
