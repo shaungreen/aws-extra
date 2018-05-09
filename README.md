@@ -22,10 +22,10 @@ Logging of calls to the SDK is enabled by default, but you can turn it off if yo
 ~~~ javascript
 const sdk = require('aws-extra').sdk
 
-sdk.logging = false // turns logging off
+sdk.logLevel = 'NONE' // turns logging off, valid options are NONE, INFO, and DEBUG
 const myFunctions = await sdk.lambda.listFunctions()
 console.log('functions length:', myFunctions.Functions.length)
-sdk.logging = true // turns logging on
+sdk.logLevel = 'INFO'
 const myInstances = await sdk.ec2.describeInstances()
 console.log('instances length:', myInstances.Reservations.length)
 
@@ -42,13 +42,23 @@ You can inject your own logger into the `aws-extra.sdk` object if you wish.  All
 ~~~ javascript
 const sdk = require('aws-extra').sdk
 
-sdk.injectLogFunction(info => console.log(JSON.stringify(info)))
+sdk.injectLogFunction(info => console.log(info))
 const myInstances = await sdk.ec2.describeInstances()
 console.log('instances length:', myInstances.Reservations.length)
 /*
 example output:
-  {"service":"EC2","operation":"DescribeInstances","success":true,"recordType":"Reservations","recordCount":11}
-  instances length: 11
+{ logLevel: 'INFO',
+  service: 'EC2',
+  operation: 'DescribeInstances',
+  params: undefined,
+  success: true,
+  recordType: 'Reservations',
+  recordCount: 11,
+  result:
+   { Reservations:
+      [ [Object], [Object], [Object], [Object], [Object], [Object],
+        [Object], [Object], [Object], [Object], [Object] ] } }
+instances length: 11
 */
 ~~~
 
