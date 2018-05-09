@@ -7,7 +7,7 @@
   "author": "Shaun Green <shaun@tuxedo.net.au>",
   "license": "MIT",
   "private": false,
-  "devDependencies": {
-    "aws-sdk": "^2.233.1"
+  "peerDependencies": {
+    "aws-sdk": "^2.235.1"
   }
 }
