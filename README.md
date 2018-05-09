@@ -74,6 +74,6 @@ example output:
 ~~~
 
 ## What does it cost?
-Aws-extra currently weighs in at 48KB.  It brings in no other dependencies (in production).  The aws-sdk is listed as a dev dependency in case you wish to use aws-extra for your lambda functions (which already have the aws-sdk on the node path).  If you are not using aws-extra in a lambda, you need to add aws-sdk as a non-dev dependency yourself.
+Aws-extra currently weighs in at 48KB.  It brings in no other dependencies (in production).  The aws-sdk is listed as a peer dependency in case you wish to use aws-extra for your lambda functions (which already have the aws-sdk on the node path).  If you are not using aws-extra in a lambda, you need to add aws-sdk as a dependency yourself.
 
 Module load time was 350ms when tested (YMMV).
