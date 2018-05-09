@@ -1,6 +1,6 @@
 {
   "name": "aws-extra",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Extra layers of usefulness on top of the AWS JavaScript SDK.",
   "main": "src/index.js",
   "repository": "git@github.com:shaungreen/aws-extra.git",
