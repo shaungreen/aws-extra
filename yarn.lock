@@ -2,6 +2,6 @@
 # yarn lockfile v1
 
 
-aws-extra-one@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/aws-extra-one/-/aws-extra-one-1.0.8.tgz#a2f9e39ef3eb4bc705978c1d2d075829c011b5ca"
+aws-extra-one@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/aws-extra-one/-/aws-extra-one-1.0.9.tgz#5e136c47712e1c6fc640041a88001f672f391c83"

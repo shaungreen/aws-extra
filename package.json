@@ -48,6 +48,6 @@
   ],
   "private": false,
   "dependencies": {
-    "aws-extra-one": "^1.0.8"
+    "aws-extra-one": "^1.0.9"
   }
 }
