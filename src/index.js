@@ -1,3 +1,5 @@
+const one = require('aws-extra-one')
+
 module.exports = {
-  sdk: require('./sdk')
+  sdk: one.sdk
 }
