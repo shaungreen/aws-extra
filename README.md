@@ -10,10 +10,8 @@ Useful enhancements to the AWS JavaScript SDK.
 # Prerequisites
 The code makes use of async/await, so you will require node8+.
 
-# Overview and examples
-See the [Overview and examples](overview.md) page.
-
-# API
-See the [sdk](api.md) page.
+# Documentation
+For a quick introduction, see the [Overview and Examples](overview.md) page.
+There is also a page that provides full [API Documentation](api.md).
 
 [^1]: except CloudSearchDomain and IotData

@@ -15,7 +15,7 @@ const sdkEnhancer = (config) => {
   for (let service of Object.keys(sdk.AWS).filter(s => !unsupportedServices.includes(s))) {
     const serviceIdentifier = sdk.AWS[service].serviceIdentifier
     if (serviceIdentifier) {
-      // get metadata about service and its apis from JSON files that amazon helpfully provides
+      // get metadata about service and its APIs from JSON files that amazon helpfully provides
       let serviceSpecificConfig = {}
       if (config[service]) serviceSpecificConfig = config[service]
       const latestApiVersion = sdk.AWS[service].apiVersions[sdk.AWS[service].apiVersions.length - 1]
