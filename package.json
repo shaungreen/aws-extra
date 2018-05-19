@@ -1,6 +1,6 @@
 {
   "name": "aws-extra",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Useful enhancements to the AWS JavaScript SDK.",
   "main": "src/index.js",
   "repository": {
