@@ -1,9 +1,19 @@
 # aws-extra
 
-Extra layers of usefulness on top of the AWS JavaScript SDK. `aws-extra` is just a wrapper around the individual layers:
-* [aws-extra-one](https://gitlab.com/shaungreen/aws-extra-one/wikis/aws-extra-one)
+Useful enhancements to the AWS JavaScript SDK.
 
-## Layer one
-* promisfied aws-sdk (all of it)
+# What's in the box?
+* promisfied aws-sdk (all of it[^1])
 * automatic, configurable logging of sdk calls
-* automatic pagination of paged sdk calls like `lambda.listFunctions`
+* automatic page handling logic for paged sdk calls
+
+# Prerequisites
+The code makes use of async/await, so you will require node8+.
+
+# Overview and examples
+See the [Overview and examples](overview.md) page.
+
+# API
+See the [sdk](api.md) page.
+
+[^1]: except CloudSearchDomain and IotData
